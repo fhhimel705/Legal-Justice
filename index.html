@@ -16,16 +16,44 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- css -->
     <style>
-        body{
+        body {
             max-width: 1170px;
             font-family: Garamond;
         }
-        footer{
+
+        footer {
             width: 100%;
         }
 
         .b-0 {
             height: 550px;
+        }
+
+        .custom-width {
+            width: 500px;
+            height: 64px;
+        }
+        .custom-height{
+            height: 500px;
+        }
+        .faq-img-h{
+            height :540px;
+        }
+        @media screen and (max-width:660px) {
+          .custom-width {
+            width: 290px;
+            height: 35px;
+
+        }  
+        .custom-height{
+                height: 300px;
+            }
+        .b-0 {
+            height: 300px;
+        }
+        .faq-img-h{
+            height :340px;
+        }
         }
     </style>
 
@@ -45,15 +73,15 @@
                 </div>
                 <div class="text-sm breadcrumbs font-medium">
                     <ul>
-                        <li class="m-2"><a>Home</a></li>
-                        <li class="m-2"><a>Documents</a></li>
-                        <li class="m-2">Add Document</li>
-                        <li class="m-2">About</li>
-                        <li class="m-2">Contact Us</li>
+                        <li class="md:m-2"><a>Home</a></li>
+                        <li class="md:m-2"><a>Documents</a></li>
+                        <li class="md:m-2">Add Document</li>
+                        <li class="md:m-2">About</li>
+                        <li class="md:m-2">Contact Us</li>
                     </ul>
                 </div>
                 <div>
-                    <button class="bg-[#B68C5A] text-white text-xl font-semibold rounded-lg py-4 px-7"
+                    <button class="bg-[#B68C5A] text-white md:text-xl font-semibold rounded-lg md:py-4 md:px-7"
                         onclick="my_modal_5.showModal()">Free
                         Consultation</button>
                     <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
@@ -76,17 +104,18 @@
     banner
 --------------- -->
                 <div>
-                    <div class="b-0 grid gap-6 text-center place-content-center text-white"
+                    <div class="b-0 grid gap-2 md:gap-6 text-center place-content-center text-white p-10 md:p-0"
                         style="background-image: url(images/banner.png);">
-                        <h1 class="text-7xl font-bold">We Provide Effective <br> Legal Solutions</h1>
+                        <h1 class="text-2xl md:text-7xl font-bold">We Provide Effective <br> Legal Solutions</h1>
                         <p>There are many variations of passages of Lorem Ipsum available, but the majority <br> have
                             suffered alteration in some form,
                             by injected humour.</p>
-                        <div>
-                            <input style="width: 500px; height: 64px;" class="rounded-lg text-center mr-6" type="search"
+                        <div >
+                            <input class="rounded-lg px-3 custom-width md:mr-6" type="search"
                                 placeholder="Search your services">
+
                             <button
-                                class="bg-[#B68C5A] text-white text-xl font-semibold rounded-lg py-4 px-7">Search</button>
+                                class="bg-[#B68C5A] text-white text-xl font-semibold rounded-lg mt-2 md: py-1 px-4 md:py-4 md:px-7">Search</button>
                         </div>
 
 
@@ -107,13 +136,13 @@
             <p class="text-center font-medium mt-6">There are many variations of passages of Lorem Ipsum available, but
                 the majority have suffered alteration in some form,
                 by injected humour.</p>
-            <div class="grid grid-cols-3 my-12 ">
-                <div class="text-center grid gap-6 py-16 px-16 border-b">
+            <div class="grid grid-cols-2 md:grid-cols-3 my-12 ">
+                <div class="text-center grid gap-6 p-3 md:p-16 border-b">
                     <div class="grid place-content-center">
                         <img src="images/business.png" class="" alt="">
                     </div>
-                    <h4 class="text-3xl font-bold">Business Law1</h4>
-                    <p class="font-medium">There are many variations of passages of Lorem Ipsum available, but the
+                    <h4 class="text-2xl md:text-3xl font-bold">Business Law1</h4>
+                    <p class="md:font-medium">There are many variations of passages of Lorem Ipsum available, but the
                         majority have suffered alteration in some form,
                         by injected humour.</p>
                     <div class="grid place-content-center">
@@ -127,12 +156,12 @@
 
                 </div>
 
-                <div class="text-center grid gap-6 py-16 px-16 border bg-gradient-to-r from-[#F3F3F3] to-slate-50 ...">
+                <div class="text-center grid gap-6 p-3 md:p-16 border bg-gradient-to-r from-[#F3F3F3] to-slate-50 ...">
                     <div class="grid place-content-center">
                         <img src="images/business.png" class="" alt="">
                     </div>
-                    <h4 class="text-3xl font-bold">Business Law2</h4>
-                    <p class="font-medium">There are many variations of passages of Lorem Ipsum available, but the
+                    <h4 class="text-2xl md:text-3xl font-bold">Business Law2</h4>
+                    <p class="md:font-medium">There are many variations of passages of Lorem Ipsum available, but the
                         majority have suffered alteration in some form,
                         by injected humour.</p>
                     <div class="grid place-content-center">
@@ -143,12 +172,12 @@
                         </svg>
                     </div>
                 </div>
-                <div class="text-center grid gap-6 py-16 px-16 border-b">
+                <div class="text-center grid gap-6 p-3 md:p-16 border-b">
                     <div class="grid place-content-center">
                         <img src="images/business.png" class="" alt="">
                     </div>
-                    <h4 class="text-3xl font-bold">Business Law</h4>
-                    <p class="font-medium">There are many variations of passages of Lorem Ipsum available, but the
+                    <h4 class="text-2xl md:text-3xl font-bold">Business Law</h4>
+                    <p class="md:font-medium">There are many variations of passages of Lorem Ipsum available, but the
                         majority have suffered alteration in some form,
                         by injected humour.</p>
                     <div class="grid place-content-center">
@@ -159,12 +188,12 @@
                         </svg>
                     </div>
                 </div>
-                <div class="text-center grid gap-6 py-16 px-16  ">
+                <div class="text-center grid gap-6  p-3 md:p-16   ">
                     <div class="grid place-content-center">
                         <img src="images/business.png" class="" alt="">
                     </div>
-                    <h4 class="text-3xl font-bold">Business Law</h4>
-                    <p class="font-medium">There are many variations of passages of Lorem Ipsum available, but the
+                    <h4 class="text-2xl md:text-3xl font-bold">Business Law</h4>
+                    <p class="md:font-medium">There are many variations of passages of Lorem Ipsum available, but the
                         majority have suffered alteration in some form,
                         by injected humour.</p>
                     <div class="grid place-content-center">
@@ -175,12 +204,12 @@
                         </svg>
                     </div>
                 </div>
-                <div class="text-center grid gap-6 py-16 px-16 border-x">
+                <div class="text-center grid gap-6  p-3 md:p-16  border-x">
                     <div class="grid place-content-center">
                         <img src="images/business.png" class="" alt="">
                     </div>
-                    <h4 class="text-3xl font-bold">Business Law</h4>
-                    <p class="font-medium">There are many variations of passages of Lorem Ipsum available, but the
+                    <h4 class="text-2xl md:text-3xl font-bold">Business Law</h4>
+                    <p class="md:font-medium">There are many variations of passages of Lorem Ipsum available, but the
                         majority have suffered alteration in some form,
                         by injected humour.</p>
                     <div class="grid place-content-center">
@@ -191,12 +220,12 @@
                         </svg>
                     </div>
                 </div>
-                <div class="text-center grid gap-6 py-16 px-16 ">
+                <div class="text-center grid gap-6  p-3 md:p-16  ">
                     <div class="grid place-content-center">
                         <img src="images/business.png" class="" alt="">
                     </div>
-                    <h4 class="text-3xl font-bold">Business Law</h4>
-                    <p class="font-medium">There are many variations of passages of Lorem Ipsum available, but the
+                    <h4 class="text-2xl md:text-3xl font-bold">Business Law</h4>
+                    <p class="md:font-medium">There are many variations of passages of Lorem Ipsum available, but the
                         majority have suffered alteration in some form,
                         by injected humour.</p>
                     <div class="grid place-content-center">
@@ -212,7 +241,7 @@
         </section>
         <section class="my-8">
             <!-- ---------------------
-            client
+            client carousel
         ------------------- -->
             <h4 class="text-5xl   text-center  font-bold">What Our Client Say</h4>
             <p class="font-medium text-center my-4 ">There are many variations of passages of Lorem Ipsum available, but
@@ -222,69 +251,68 @@
                 <div class="carousel ">
                     <div id="slide1" class="carousel-item relative w-full">
                         <div style="background-image: url(images/slider-1.jpg);"
-                            class="bg-cover bg-center w-full text-center text-white rounded-xl ">
-                            <div class="p-32">
-                                <img src="images/client.png"
-                                    class="w-16 h-16 border-4 border-black mx-auto bg-white rounded-full" alt="">
+                            class="bg-cover w-full text-center text-white rounded-xl mx-auto custom-height">
+                            <!-- Adjusted width for different screen sizes -->
+                            <div class="p-5 md:p-8 lg:p-16">
+                                <img src="images/client.png" class="w-16 h-16 border-4 border-black mx-auto bg-white rounded-full"
+                                    alt="">
                                 <h6 class="text-2xl font-bold mt-6 mb-1">Awlad Hossain</h6>
                                 <p class="font-medium mb-8">UIX Designer</p>
-                                <p class="font-medium">Contrary to popular belief, Lorem Ipsum is not simply random
-                                    text. It has roots in a
-                                    piece of classical Latin literature
-                                    from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at
-                                    Hampden-Sydney College in Virginia,
-                                    looked up one of the more obscure Latin words, consectetur.</p>
+                                <p class="font-medium">Contrary to popular belief, Lorem Ipsum is not simply random text. It has
+                                    roots in a
+                                    piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard
+                                    McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the
+                                    more obscure Latin words, consectetur.</p>
                             </div>
                         </div>
                         <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                            <a href="#slide3" class="btn ">❮</a>
-                            <a href="#slide2" class="btn ">❯</a>
+                            <a href="#slide3" class="btn m-0">❮</a>
+                            <a href="#slide2" class="btn m-0">❯</a>
                         </div>
                     </div>
                     <div id="slide2" class="carousel-item relative w-full">
                         <div style="background-image: url(images/slider-2.jpg);"
-                            class="bg-cover bg-center w-full text-center text-white rounded-xl ">
-                            <div class="p-32">
-                                <img src="images/client.png"
-                                    class="w-16 h-16 border-4 border-black mx-auto bg-white rounded-full" alt="">
+                            class="bg-cover w-full text-center text-white rounded-xl mx-auto custom-height">
+                            <!-- Adjusted width for different screen sizes -->
+                            <div class="p-5 md:p-8 lg:p-16">
+                                <img src="images/client.png" class="w-16 h-16 border-4 border-black mx-auto bg-white rounded-full"
+                                    alt="">
                                 <h6 class="text-2xl font-bold mt-6 mb-1">Awlad Hossain</h6>
                                 <p class="font-medium mb-8">UIX Designer</p>
-                                <p class="font-medium">Contrary to popular belief, Lorem Ipsum is not simply random
-                                    text. It has roots in a
-                                    piece of classical Latin literature
-                                    from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at
-                                    Hampden-Sydney College in Virginia,
-                                    looked up one of the more obscure Latin words, consectetur.</p>
+                                <p class="font-medium">Contrary to popular belief, Lorem Ipsum is not simply random text. It has
+                                    roots in a
+                                    piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard
+                                    McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the
+                                    more obscure Latin words, consectetur.</p>
                             </div>
                         </div>
                         <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                            <a href="#slide1" class="btn ">❮</a>
-                            <a href="#slide3" class="btn ">❯</a>
+                            <a href="#slide1" class="btn m-0">❮</a>
+                            <a href="#slide3" class="btn m-0">❯</a>
                         </div>
                     </div>
                     <div id="slide3" class="carousel-item relative w-full">
                         <div style="background-image: url(images/slider-3.jpg);"
-                            class="bg-cover bg-top w-full text-center text-white rounded-xl ">
-                            <div class="p-32">
-                                <img src="images/client.png"
-                                    class="w-16 h-16 border-4 border-black mx-auto bg-white rounded-full" alt="">
+                            class="bg-cover w-full text-center text-white rounded-xl mx-auto custom-height">
+                
+                            <div class="p-5 md:p-8 lg:p-16">
+                                <img src="images/client.png" class="w-16 h-16 border-4 border-black mx-auto bg-white rounded-full"
+                                    alt="">
                                 <h6 class="text-2xl font-bold mt-6 mb-1">Awlad Hossain</h6>
                                 <p class="font-medium mb-8">UIX Designer</p>
-                                <p class="font-medium">Contrary to popular belief, Lorem Ipsum is not simply random
-                                    text. It has roots in a
-                                    piece of classical Latin literature
-                                    from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at
-                                    Hampden-Sydney College in Virginia,
-                                    looked up one of the more obscure Latin words, consectetur.</p>
+                                <p class="font-medium">Contrary to popular belief, Lorem Ipsum is not simply random text. It has
+                                    roots in a
+                                    piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard
+                                    McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the
+                                    more obscure Latin words, consectetur.</p>
                             </div>
                         </div>
                         <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                            <a href="#slide2" class="btn ">❮</a>
-                            <a href="#slide1" class="btn ">❯</a>
+                            <a href="#slide2" class="btn m-0">❮</a>
+                            <a href="#slide1" class="btn m-0">❯</a>
                         </div>
                     </div>
-
-
+                
                 </div>
             </div>
         </section>
@@ -292,12 +320,12 @@
         frequently asked question
     ------------------------ -->
         <section>
-            <h3 class="text-5xl font-bold mt-28 text-center">Frequently Asked Any Questions</h3>
+            <h3 class="text-5xl font-bold md:mt-28 text-center">Frequently Asked Any Questions</h3>
             <p class="font-medium my-4 text-center">There are many variations of passages of Lorem Ipsum available, but
                 the majority
                 have suffered alteration in some form,
                 by injected humour.</p>
-            <div class="grid grid-cols-2 gap-7 my-16">
+            <div class="grid md:grid-cols-2 gap-7 my-16">
                 <div>
                     <div class="collapse collapse-plus  md:p-5  bg-base-200 mb-5">
                         <input type="radio" name="my-accordion-3" checked="checked" />
@@ -341,7 +369,7 @@
                     </div>
                 </div>
                 <div>
-                    <img src="images/faq.png" style="height :540px ;" class="w-full" alt="">
+                    <img src="images/faq.png"  class="w-full faq-img-h" alt="">
                 </div>
             </div>
 
@@ -354,7 +382,7 @@
             <p class="font-medium my-4 text-center">There are many variations of passages of Lorem Ipsum available, but
                 the majority have suffered alteration in some form,
                 by injected humour.</p>
-            <div class="grid grid-cols-2 gap-5">
+            <div class="grid md:grid-cols-2 gap-5">
                 <div class="grid grid-cols-2">
                     <div class="grid place-content-center gap-3 border-b-2 bg-[#F3F3F3]">
                         <img src="images/address.png" class="mx-auto" alt="">
@@ -394,38 +422,57 @@
         </section>
 
     </main>
-    <footer class="bg-[#111]">
-    
-        <div class="text-white grid grid-cols-4"> 
+    <!-- ----------------
+        footer
+    ----------------- -->
+    <footer class="bg-[#111] rounded-xl">
+
+        <div class="text-white grid md:grid-cols-4 gap-12 mt-8 md:my-8 p-8">
             <div class="grid gap-3">
                 <img src="images/logo.png" alt="">
-                <p class="w-60">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form,
-                by injected humour./p>
+                <p class="w-60">There are many variations of passages of Lorem Ipsum available, but the majority have
+                    suffered alteration in some form,
+                    by injected humour./p>
             </div>
             <div class="grid gap-3">
                 <h5 class="text-2xl font-bold">Usefull Link</h5>
                 <p>Home</p>
-                <p>Home</p>
-                <p>Home</p>
-                <p>Home</p>
-                <p>Home</p>
+                <p>About Us</p>
+                <p>Cases</p>
+                <p>Blog</p>
+                <p>Contact Us</p>
             </div>
             <div class="grid gap-3">
                 <h5 class="text-2xl font-bold">Contact Now</h5>
                 <p>555 4th 5t NW, Washington <br>
-                DC 20530, United States</p>
+                    DC 20530, United States</p>
                 <p>+88 01750 000 000 <br>
                     +88 01750 000 000
                 </p>
                 <p>info@gmail.com <br>
-                info@gmail.com </p>
+                    info@gmail.com </p>
             </div>
             <div class="grid gap-3">
                 <h5 class="text-2xl font-bold">Subscribe</h5>
                 <p class="w-48">Subscribe for our latest & Articles. We Won’t Give You Spam Mails</p>
-                <input type="email" placeholder="Your Email"  >
+                <div class="inline">
+                    <input type="email" class="rounded-xl px-3 h-16" placeholder="Your Email">
+                    <!-- <button class="w-16 h-16 bg-[#B68C5A] inline"><svg xmlns="http://www.w3.org/2000/svg" width="34" height="34"
+                            viewBox="0 0 34 34" fill="none">
+                            <g clip-path="url(#clip0_12_37)">
+                                <path
+                                    d="M12.7279 21.2427L4.52197 16.8989C10.4846 13.6228 16.9629 11.3888 23.6775 10.2931C22.5826 17.0078 20.3492 23.4863 17.0738 29.4494L12.7279 21.2427ZM12.7279 21.2427L18.0312 15.9394"
+                                    stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_12_37">
+                                    <rect width="24" height="24" fill="white" transform="translate(0 17) rotate(-45)" />
+                                </clipPath>
+                            </defs>
+                        </svg></button> -->
+                </div>
             </div>
-    
+
         </div>
     </footer>
 
